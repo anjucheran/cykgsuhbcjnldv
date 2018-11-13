@@ -1,0 +1,55 @@
+## Cash Deposit ##
+=========================================
+
+** On form open
+------------------------------------------
+if(currency == LKR) {
+    publish({
+        type: local-deposit
+    })
+} else {
+    publish({
+        type: foreign-deposit
+    })
+}
+
+## Local Deposit ##
+===================================
+
+** On form validate
+------------------------
+**** Publish these
+{
+    type: fieldName_account_2,
+    value: (account number)
+}
+{
+    type: fieldName_amount_local_1_1,
+    value: (amount)
+}
+{
+    type: validate,
+}
+
+
+## Foreign Deposit ##
+===================================
+
+** On form validate
+------------------------
+**** Publish these
+{
+    type: fieldName_account_2,
+    value: (account number)
+}
+{
+    type: fieldName_currency_1,
+    value: (currency)
+}
+{
+    type: fieldName_amount_fcy_1_1,
+    value: (amount)
+}
+{
+    type: validate,
+}

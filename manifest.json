@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Phygital Banking",
+    "description": "Automatic banking details filling",
+    "version": "1.0.6",
+    "browser_action": {
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://10.96.197.131/*"],
+            "js": ["dist/content.bundle.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["dist/background.bundle.js"],
+        "persistent": false
+      },
+    "permissions": ["activeTab","tabs"]
+}

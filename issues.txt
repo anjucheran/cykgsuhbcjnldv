@@ -1,0 +1,33 @@
+## Local Deposit
+* Description, source of funds, narrative
+* (Check with foreign deposit)
+$$ Narrative -> manual
+$$ Description -> manual
+$$ Source of Funds -> manual
+
+## Utility Bill Payments
+* Currency (phy)
+* Collection account name (phy)
+* Collection account number (phy)
+* Reference Number (phy)
+$$ Collection account name --> Dialog, SLT,......
+$$ Reference Number --> Bill account number
+$$ Collection account number --> Displayed in branch and customer has to input
+
+## Cash Withdrawal Current Accounts
+* narrative
+* (Check with savings)
+$$ manual inputs
+
+## CEFT
+* No account type in phygital side
+* Narration
+$$ Manual entries
+
+## Fund Transfer Within NDB
+* Cus Related Manual Entry -> manual entry by CSR?
+* Other manual entries
+$$ Manual entries
+
+## Credit Card Payment
+* Path??
