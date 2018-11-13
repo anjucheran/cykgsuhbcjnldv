@@ -17,19 +17,10 @@ client.on('connect', function() {
         key: store.state.key,
         channel: `user/${store.state.username}/`
       });
-      client.publish({
-        key: store.state.key,
-        channel: `user/${store.state.username}/`,
-        message: '{"login": "anju"}'
-      })
-      browser.tabs.query({}, function(tabs) {
-        tabs.forEach((tab) => {
-            browser.tabs.sendMessage(tab.id, { name: 'vhj '});
-        });
-      });
     }
 
     client.on('message', function(msg) {
+      console.log(msg);
         sendingMessage(msg);
 
         // browser.tabs.query({}, function(tabs) {
